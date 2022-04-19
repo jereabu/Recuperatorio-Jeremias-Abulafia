@@ -20,8 +20,8 @@ public class Heladeria : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        int precio = gramos / 2;
-        int precioFRU = (precio / 100) * 90;
+        float precio = gramos / 2;
+        float precioFRU = (precio / 100) * 90;
         if(helado == "DDL" || helado == "CHO")
         {
             Debug.Log("El precio va a ser " + precio);
