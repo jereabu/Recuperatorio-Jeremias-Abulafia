@@ -22,7 +22,11 @@ public class Heladeria : MonoBehaviour
     {
         float precio = gramos / 2;
         float precioFRU = (precio / 100) * 90;
-        if (gramos >= 250 || gramos <= 3000)
+        if (gramos > 3000 || gramos < 249)
+        {
+            Debug.Log("Ingresa menos gramos a 3000 o mas de 250");
+        }
+        else
         {
             if (helado == "DDL" || helado == "CHO")
             {
@@ -37,10 +41,6 @@ public class Heladeria : MonoBehaviour
             {
                 Debug.Log("El gusto ingresado no es valido.");
             }
-        }
-        else
-        {
-            Debug.Log("Ingresa un numero de gramos mayor a 250 o menor a 3000");
         }
                 }
     
